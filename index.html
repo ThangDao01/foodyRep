@@ -111,11 +111,11 @@
 <div class="deal" style="padding-top: 20px">
   <div class="container border p-0">
     <nav class=" bg-white navbar-expand justify-content-sm-start">
-      <div class="container col-12 align-items-center d-flex flex-wrap p-2">
+      <div class="container col-12 d-flex flex-wrap">
         <img src="https://www.foody.vn/asset/styles/images/icons/icon-delivery-60x60-3.png" width="40px" alt="">
         <div class="title">Giao nhanh tận nơi</div>
         <ul class="navbar-nav col-xl-8 col-sm-12 p-10 flex-wrap"
-            style="height: 32px;align-items: center;font-size: 14px">
+            style="height: 100%;align-items: center;font-size: 14px">
           <li class="nav-item">
             <a class="nav-link-df active">Deal hôm nay</a>
           </li>
@@ -624,8 +624,12 @@
     autoplay: true,
     autoplaySpeed: 2000,
   });
-  $('.slick-next').slick('slickNext')
-  $('.slick-prev').slick('slickPrev')
+  $('.slick-prev').click(function(){
+    $(".slick-auto-3").slick('slickPrev');
+  });
+  $('.slick-next').click(function(){
+    $(".slick-auto-3").slick('slickNext');
+  });
 
   // $('.slick-auto-1').slick({
   //   slidesToShow: 1,
