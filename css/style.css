@@ -1,124 +1,266 @@
-body{
+body {
   background-color: #eee;
   font-size: 12px;
   font-family: arial, serif;
 }
-li{
+
+li {
   list-style: none;
 }
-.w-33{
+
+.w-33 {
   width: 33% !important;
 }
-a{
+
+#toolbarFixed {
+  border-bottom: #ddd 1px solid;
+}
+
+.tool {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  max-width: 42px;
+  background-color: #ccc;
+}
+
+.tool-item {
+  border-bottom: 1px solid #c2c2c2;
+  padding: 10px;
+}
+
+.tool-item i {
+  font-size: 22px;
+  color: white;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-placeholder {
+  font-weight: 400;
+  color: #777;
+  font-size: 14px;
+}
+.btn-icon{
+  width: 30px !important;
+  height: 30px !important;
+  font-size: 15px;
+}
+.bg-df{
+  background-color: #eee !important;
+}
+.color-df{
+  color: #777 !important;
+}
+a {
   text-decoration: none !important;
 }
-.nav-link{
+
+.nav-link {
   color: #ddd !important;
 }
-.deal-xl{
+
+.deal-xl {
 }
-.nav-link-df{
+
+.nav-link-df {
+  text-align: center;
   align-items: center;
-  color: black !important;
+  color: black;
   text-decoration: none;
   padding: 5px;
+  min-width: 100%;
 }
-.nav-item{
+.nav-item {
   display: flex;
   min-height: 100%;
   align-items: center;
   padding: 0 5px;
 }
-
-.nav-link-df.active{
-  background-color: white;
-  border-bottom: red solid 2px;
-}
-.nav-item.active{
-  background-color: white;
-  border-bottom: red solid 2px;
-}
 .nav-item:hover{
+  color: red !important;
   background-color: white;
   border-bottom: red solid 2px;
 }
-.nav-link.active{
+.nav-item:hover a{
+  color: red !important;
+}
+
+img {
+  object-fit: cover;
+}
+
+.input-search input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.slick-title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.slick-desc {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.slick-auto-1 p {
+  font-size: 14px;
+}
+
+.nav-link-df.active {
+  color: red;
+  background-color: white;
+  border-bottom: red solid 2px;
+}
+
+.nav-item.active{
+  color: red !important;
+  background-color: white;
+  border-bottom: red solid 2px;
+}
+.nav-item.active a{
+  color: red;
+}
+.nav-item:hover {
+  color: #333 !important;
+  background-color: white;
+}
+
+.nav-link.active {
   background-color: #fff;
   color: #333 !important;
 }
-.bg-black{
- background-color: #333;
+
+.bg-black {
+  background-color: #333;
 }
-.bg-black2{
+
+.bg-black2 {
   background-color: black;
 }
+
 .header-toolbar {
   justify-items: center;
-  background-color:white ;
+  background-color: white;
 }
-.isScroll{
+
+.isScroll {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 888;
 }
-.menuFixed{
+
+.menuFixed {
   position: sticky;
-  top:47px;
+  top: 47px;
   z-index: 800;
 }
-.topM{
+
+.topM {
   height: 100px;
 }
-.header-toolbar div div{
-  margin: 5px;
+
+.header-toolbar div div {
+  margin: 0 5px 0 0;
 }
-.nav-btn{
+
+.nav-btn {
   background-color: #282828;
   width: 30px;
   height: 30px;
 }
-.slide{
-  height: 150%;
+
+.slide {
+  height: 440px;
   width: 100%;
   background-color: black;
   position: relative;
 }
-.title{
+
+.slick-arrow {
+  display: none !important;
+}
+
+.btn-slide1 {
+  width: 38px !important;
+  height: 38px !important;
+}
+
+.title {
   font-size: 20px;
   font-weight: 700;
 }
-.negative-menu:hover{
+
+.negative-menu {
+  padding: 10px 15px;
+  font-size: 14px
+}
+
+.negative-menu.active {
+  color: red;
+}
+
+.negative-menu:hover {
   color: red;
   background-color: #f7f7f7;
 }
-.slick-auto-3 img{
+
+.slick-auto-3 img {
   min-width: 33%;
 }
-@media (max-width: 576px ){
-  #menuFixed{
+
+.config {
+
+}
+
+.config a {
+  color: #1D95CB;
+}
+
+@media (max-width: 576px ) {
+  #menuFixed {
     display: none;
   }
 }
-@media (min-width: 577px ){
 
-    /*.slick-auto-3{*/
-    /*  display: block !important;*/
-    /*}*/
-    /*.slick-auto-1{*/
-    /*  display: none !important;*/
-    /*}*/
+@media (min-width: 577px ) {
+
+  /*.slick-auto-3{*/
+  /*  display: block !important;*/
+  /*}*/
+  /*.slick-auto-1{*/
+  /*  display: none !important;*/
+  /*}*/
 }
-@media (max-width: 576px ){
+
+@media (max-width: 576px ) {
 
 }
-@media (min-width: 1200px ){
-  .deal-xl{
+
+@media (min-width: 1200px ) {
+  .deal-xl {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     min-width: 20%;
   }
-  .menuFixed{
+
+  .menuFixed {
     width: 100%;
   }
 }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+

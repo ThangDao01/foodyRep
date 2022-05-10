@@ -5,9 +5,8 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <title>Địa điểm ăn uống, ẩm thực, ăn gì ở đâu tại Hà Nội, nhà hàng, cafe | Ăn uống | Foody.vn</title>  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -18,70 +17,97 @@
 <header class="header">
   <div class="align-content-center">
     <nav class="navbar-dark bg-black navbar-expand justify-content-sm-start">
-      <div class="container  col-sm-12 col-xl-8">
+      <div class="container" style="width: 1170px;">
         <ul class="navbar-nav" style="height: 32px;align-items: center;">
-          <li class="nav-item">
-            <a class="nav-link active">Khám phá</a>
+          <li class="">
+            <a class="nav-link p-3 active">Khám Phá</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">Đặt giao hàng</a>
+          <li class="">
+            <a class="nav-link p-3">Đặt Giao Hàng</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">Đi chợ</a>
+          <li class="">
+            <a class="nav-link p-3">Đi Chợ</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">NowPOS</a>
+          <li class="">
+            <a class="nav-link p-3">NowPOS</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">Giảm giá</a>
+          <li class="">
+            <a class="nav-link p-3">Giảm Giá</a>
           </li>
         </ul>
       </div>
     </nav>
   </div>
-  <div class="header-toolbar" id="toolbarFixed">
-    <div class="container d-flex justify-content-start col-sm-12 col-xl-8" style="align-items: center;">
-      <div style="display: inline-block;overflow: hidden">
-        <img src="https://www.foody.vn/style/images/logo/foody-vn.png" alt="" width="100%">
-      </div>
-      <div class="dropdown border d-none d-md-block" style="color: #777">
-        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-          Hà Nội
-        </button>
-        <div class="dropdown-menu">
-          <h1 class="dropdown-header"><i class="fa fa-globe" aria-hidden="true"></i>Tỉnh Thành</h1>
-          <a class="dropdown-item" href="#">TP HCM</a>
+    <div class="header-toolbar" style="padding: 10px" id="toolbarFixed">
+      <div class="container d-flex justify-content-start p-0" style="align-items: center;height: 32px;">
+        <div style="display: inline-block;overflow: hidden;min-width:85px;margin-right: 14px">
+          <img src="https://www.foody.vn/style/images/logo/foody-vn.png" alt=""  width="85px">
+        </div>
+        <div class="dropdown border d-none d-md-block" style="color: #777">
+          <button type="button" class="btn dropdown-toggle text-placeholder" data-toggle="dropdown"  style="color: #999;">
+            Hà Nội
+          </button>
+          <div class="dropdown-menu">
+            <h1 class="dropdown-header"><i class="fa fa-globe" aria-hidden="true"></i>Tỉnh Thành</h1>
+            <a class="dropdown-item" href="#">TP HCM</a>
+          </div>
+        </div>
+        <div class="dropdown border d-none d-md-block" style="color: #777">
+          <button type="button" class="btn dropdown-toggle text-placeholder" data-toggle="dropdown"  style="color: #999;">
+            Ăn uống
+          </button>
+          <div class="dropdown-menu">
+            <h1 class="dropdown-header"><i class="fa fa-bars" aria-hidden="true"></i>Select Category</h1>
+            <a class="dropdown-item" href="#">Ăn uống</a>
+          </div>
+        </div>
+        <div class="input-group col-md-4 col-sm-12 m-0 p-0">
+          <div class="input-search form-inline col-12 p-0  flex-nowrap">
+            <input type="text" id="form1" class="form-control rounded-0 col-9 col-sm-9 col-lg-11"
+                   placeholder="Địa điểm, món ăn, loại hình ..."/>
+            <a type="button" class="btn rounded-0 col-1" style="background-color: #ddd;padding: 6px 0;min-width: 25px;">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+        </div>
+        <a type="button" class="btn rounded-0 border d-none d-md-block" style="margin-left: 12px">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a type="button" class="btn rounded-0 border d-none d-md-block m-1">
+          <i class="fa fa-mobile"></i>
+          App
+        </a>
+        <div class="col-2 d-none d-lg-block  ml-auto p-0">
+          <div class="d-flex ml-auto flex-nowrap align-items-center">
+            <div class="col-5 p-0" style="">Đăng nhập</div>
+            <div class="col-7 p-0">
+              <a type="button" class="btn bg-df rounded-circle" style="width: 30px;height: 30px;padding: 4px">
+                <i class="fa fa-bell color-df"></i></a>
+              <a type="button" class="btn bg-df rounded-circle" style="width: 30px;height: 30px;padding: 4px">
+                <i class="fa fa-plus color-df"></i></a>
+              <a type="button" class="btn bg-df rounded-circle p-0" style="width: 30px;height: 30px;">
+                <img src="https://www.foody.vn/style/images/icons/lang/vn.png" width="20px" alt=""></a>
+            </div>
+            <!--            <i class="fa fa-bell bg-df" aria-hidden="true"></i>-->
+<!--            <i class="fa fa-plus" aria-hidden="true"></i>-->
+          </div>
         </div>
       </div>
-      <div class="dropdown border d-none d-md-block" style="color: #777">
-        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-          Ăn uống
-        </button>
-        <div class="dropdown-menu">
-          <h1 class="dropdown-header"><i class="fa fa-bars" aria-hidden="true"></i>Select Category</h1>
-          <a class="dropdown-item" href="#">Ăn uống</a>
-        </div>
-      </div>
-      <div class="input-group col-md-5 col-sd-12 m-0 p-0">
-        <div class="form-inline col-12 p-0">
-          <input type="search" id="form1" class="form-control rounded-0 col-9 col-sm-8"
-                 placeholder="Địa điểm, món ăn, loại bánh ..."/>
-          <a type="button" class="btn rounded-0 col-2 " style="background-color: #ddd">
-            <i class="fa fa-search"></i>
-          </a>
-        </div>
-      </div>
-      <a type="button" class="btn rounded-0 border d-none d-md-block">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a type="button" class="btn rounded-0 border d-none d-md-block m-1">
-        <i class="fa fa-mobile"></i>
-        App
-      </a>
-      <div class="login-action"></div>
     </div>
-  </div>
 </header>
+<div class="tool p-0" id="tool" style="display: none">
+<ul class="p-0 m-0">
+  <li class="tool-item" id="btn-back-to-top">
+    <a><i class="fa fa-angle-up"></i></a>
+  </li>
+  <li class="tool-item">
+    <a href=""><i class="fa fa-apple"></i></a>
+  </li>
+  <li class="tool-item">
+    <a href=""><i class="fa fa-android"></i></a>
+  </li>
+</ul>
+</div>
 <div class="slide">
   <!--    <div class="slick-auto-1">-->
   <!--      <div><img src="https://images.foody.vn/biz_banner/foody-675x355_foodyappbanner-636530746968443602.jpg" alt=""></div>-->
@@ -92,32 +118,62 @@
   <!--      <div><img src="https://media.foody.vn/images/beauty-upload-api-che-co-linh-675-x-355-220425115812.jpg" alt=""></div>-->
   <!--    </div>-->
   <div class="slick-auto-3">
-    <div>
-      <img src="https://images.foody.vn/biz_banner/foody-675x355_foodyappbanner-636530746968443602.jpg" alt="">
+    <div><img  src="https://images.foody.vn/biz_banner/foody-675x355_foodyappbanner-636530746968443602.jpg" alt="">
+      <div class="slick-slider"></div>
     </div>
-    <div><img src="https://media.foody.vn/images/beauty-upload-api-che-co-linh-675-x-355-220425115812.jpg" alt=""></div>
-    <div><img src="https://images.foody.vn/biz_banner/foody-675x355_foodyappbanner-636530746968443602.jpg" alt=""></div>
-    <div><img src="https://media.foody.vn/images/beauty-upload-api-che-co-linh-675-x-355-220425115812.jpg" alt=""></div>
-    <div><img src="https://images.foody.vn/biz_banner/foody-675x355_foodyappbanner-636530746968443602.jpg" alt=""></div>
-    <div><img src="https://media.foody.vn/images/beauty-upload-api-che-co-linh-675-x-355-220425115812.jpg" alt=""></div>
+    <div><img  src="https://media.foody.vn/images/beauty-upload-api-che-co-linh-675-x-355-220425115812.jpg" alt=""></div>
+    <div><img  src="https://images.foody.vn/biz_banner/foody-675x355_foodyappbanner-636530746968443602.jpg" alt=""></div>
+    <div><img  src="https://media.foody.vn/images/beauty-upload-api-che-co-linh-675-x-355-220425115812.jpg" alt=""></div>
+    <div><img  src="https://images.foody.vn/biz_banner/foody-675x355_foodyappbanner-636530746968443602.jpg" alt=""></div>
+    <div><img  src="https://media.foody.vn/images/beauty-upload-api-che-co-linh-675-x-355-220425115812.jpg" alt=""></div>
   </div>
   <div class="col-5 m-auto" style="height: 75px;justify-items: center">
-    <img class="slick-prev float-left " src="https://www.foody.vn/asset/styles/images/icons/left.png" width="40px"
+    <img class="slick-prev btn-slide1 float-left " src="https://www.foody.vn/asset/styles/images/icons/left.png" width="40px"
          alt="">
-    <img class="slick-next float-right " src="https://www.foody.vn/asset/styles/images/icons/right.png" width="40px"
+    <div class="slick-auto-detail" style="padding-top: 20px">
+      <div class="col-12 text-white text-center">
+        <div class="slick-title">Foody App trên Mobile</div>
+        <p class="slick-desc">Khám phá, đặt bàn, giao tận nơi</p>
+      </div>
+      <div class="col-12 text-white text-center">
+        <div class="slick-title">Chè Thái Cô linh</div>
+        <p>Giảm 70k cho đơn tối thiểu 200k</p>
+      </div>
+      <div class="col-12 text-white text-center">
+        <div class="slick-title">Foody App trên Mobile</div>
+        <p class="slick-desc">Khám phá, đặt bàn, giao tận nơi</p>
+      </div>
+      <div class="col-12 text-white text-center">
+        <div class="slick-title">Chè Thái Cô linh</div>
+        <p class="slick-desc">Giảm 70k cho đơn tối thiểu 200k</p>
+      </div>
+      <div class="col-12 text-white text-center">
+        <div class="slick-title">Foody App trên Mobile</div>
+        <p class="slick-desc">Khám phá, đặt bàn, giao tận nơi</p>
+      </div>
+      <div class="col-12 text-white text-center">
+        <div class="slick-title">Chè Thái Cô linh</div>
+        <p class="slick-desc">Giảm 70k cho đơn tối thiểu 200k</p>
+      </div>
+      <div class="col-12 text-white text-center">
+        <div class="slick-title">Foody App trên Mobile</div>
+        <p class="slick-desc">Khám phá, đặt bàn, giao tận nơi</p>
+      </div>
+    </div>
+    <img class="slick-next btn-slide1 float-right " src="https://www.foody.vn/asset/styles/images/icons/right.png" width="40px"
          alt="">
   </div>
 </div>
 <div class="deal" style="padding-top: 20px">
   <div class="container border p-0">
-    <nav class=" bg-white navbar-expand justify-content-sm-start">
-      <div class="container col-12 d-flex flex-wrap">
-        <img src="https://www.foody.vn/asset/styles/images/icons/icon-delivery-60x60-3.png" width="40px" alt="">
-        <div class="title">Giao nhanh tận nơi</div>
+    <nav class="bg-white navbar-expand justify-content-sm-start" style="line-height: 48px">
+      <div class="container col-12 d-flex flex-wrap align-items-center" style="padding-left: 15px">
+        <img src="https://www.foody.vn/asset/styles/images/icons/icon-delivery-60x60-3.png" width="40px" height="40px" alt="">
+        <div class="title" style="padding-left: 10px">Giao tận nơi</div>
         <ul class="navbar-nav col-xl-8 col-sm-12 p-10 flex-wrap"
             style="height: 100%;align-items: center;font-size: 14px">
-          <li class="nav-item">
-            <a class="nav-link-df active">Deal hôm nay</a>
+          <li class="nav-item active">
+            <a class="nav-link-df">Deal hôm nay</a>
           </li>
           <li class="nav-item">
             <a class="nav-link-df">Tất cả</a>
@@ -152,53 +208,54 @@
         </ul>
       </div>
     </nav>
-    <div class="col-12 d-flex flex-wrap p-2" id="deal">
+    <div class="col-12 d-flex flex-wrap p-2" id="deal" style="padding:15px !important;">
     </div>
   </div>
 </div>
 <div class="menu p-2 col-12">
   <div class="container d-flex flex-wrap p-0 justify-content-end">
-    <div class="tollBar col-xl-3 d-xl-block d-sm-none bg-white p-2" id="menuFixed" style="max-height: 450px">
-      <div style="width: 30px;" class="bg-danger float-left">
-        <img src="https://www.foody.vn/asset/styles/images/icons/icon-foody-60x60.png" width="100%" alt="">
-      </div>
-      <div class="title">Khám Phá</div>
-      <div class="negative-menu p-3">
+    <div class="tollBar col-xl-2 d-xl-block d-sm-none bg-white p-0" id="menuFixed" style="max-height: 380px">
+      <div class="title p-2 d-flex align-items-center">
+        <div style="width: 24px;height: 24px;margin-right: 5px;background-color: red" class="float-left d-flex align-items-center">
+          <img src="https://www.foody.vn/asset/styles/images/icons/icon-foody-60x60.png" style="margin: 5px" width="14px" height="14px" alt="">
+        </div>
+        Khám phá</div>
+      <div class="negative-menu active" >
         Ở đâu <i class="fa fa-angle-right float-right"></i>
       </div>
-      <div class="negative-menu p-3">
+      <div class="negative-menu">
         Giao hàng <i class="fa fa-angle-right float-right"></i>
       </div>
-      <div class="negative-menu p-3">
+      <div class="negative-menu">
         Ăn gì <i class="fa fa-angle-right float-right"></i>
       </div>
-      <div class="negative-menu p-3">
+      <div class="negative-menu">
         Sưu tập <i class="fa fa-angle-right float-right"></i>
       </div>
-      <div class="negative-menu p-3">
+      <div class="negative-menu">
         TV<i class="fa fa-angle-right float-right"></i>
       </div>
-      <div class="negative-menu p-3">
+      <div class="negative-menu">
         Bình luận<i class="fa fa-angle-right float-right"></i>
       </div>
-      <div class="negative-menu p-3">
+      <div class="negative-menu">
         Blogs <i class="fa fa-angle-right float-right"></i>
       </div>
-      <div class="negative-menu p-3">
+      <div class="negative-menu">
         Khuyến mãi <i class="fa fa-angle-right float-right"></i>
       </div>
     </div>
-    <div class="col-xl-9 col-sm-12 p-2">
+    <div class="col-xl-10 col-sm-12 p-2" style="padding-top: 0 !important;">
       <div class="col-12 d-flex flex-wrap justify-content-between p-0" id="dataScroll"
-           style="background-color: #ddd;height: 40px;">
+           style="background-color: #ddd;height: 45px;">
         <ul class=" col-md-5 col-sm-12 d-flex flex-wrap p-0" style="list-style: none;height: 100%; align-items: center">
-          <li class="nav-item col-4 active">
+          <li class="nav-item col-3 active">
             <a class="nav-link-df">Mới nhẩt</a>
           </li>
-          <li class="nav-item col-4 ">
+          <li class="nav-item col-3 ">
             <a class="nav-link-df">Gần tôi</a>
           </li>
-          <li class="nav-item col-4">
+          <li class="nav-item col-3">
             <a class="nav-link-df">Đã lưu</a>
           </li>
         </ul>
@@ -229,20 +286,23 @@
         </div>
       </div>
       <div class="d-flex flex-wrap" id="menu"></div>
+      <div class="col-12 " style="background-color: #049ec5;height: 40px;text-align: center;color: white;padding: 10px 0;font-size: 14px">
+        Xem thêm
+      </div>
     </div>
   </div>
 </div>
 <div class="footer">
   <div class="topM bg-white d-flex align-items-center">
-    <div class="container">
-      <div class="title text-left" style="color: red">Top Thành viên</div>
+    <div class="container p-0">
+      <div class="title text-left" style="color: #c00;font-size: 16px">Top Thành viên</div>
     </div>
   </div>
   <div class="container">
     <div class="title text-center p-4">Tìm địa điểm trên đường đi? Tải app Foody!</div>
     <div class="d-flex col-12 align-content-start" style="padding-top: 100px">
       <div class="col-md-4 col-sm-5">
-        <div class="btn bg-white w-75 text-center rounded-0" style="height: 40px;border:#ddd 1px solid; ">
+        <div class="btn bg-white w-50 text-center rounded-0" style="height: 40px;border:#ddd 1px solid;margin-bottom: 55px">
           Thống kê
         </div>
         <ul class="p-0">
@@ -283,15 +343,15 @@
         </ul>
       </div>
       <div class="col-md-8 d-none d-lg-block">
-        <div class="d-flex col-12 align-content-start">
+        <div class="d-flex col-12 align-content-start p-0">
           <div class="col-md-4 d-flex flex-wrap justify-content-center">
-            <div class="btn bg-white w-75 text-center rounded-0" style="height: 40px;border:#ddd 1px solid; ">
+            <div class="btn bg-white w-75 text-center rounded-0" style="height: 40px;border:#ddd 1px solid;margin-bottom: 55px">
               iOS App
             </div>
             <img src="https://www.foody.vn/style/images/icons/ios-footer.png" width="350px" alt="">
           </div>
           <div class="col-md-4 d-flex flex-wrap justify-content-center">
-            <div class="btn bg-white w-75 text-center rounded-0" style="height: 40px;border:#ddd 1px solid; ">
+            <div class="btn bg-white w-75 text-center rounded-0" style="height: 40px;border:#ddd 1px solid; margin-bottom: 55px">
               AndroidApp
             </div>
             <img src="https://www.foody.vn/style/images/icons/android-footer.png" width="350px" alt="">
@@ -461,7 +521,7 @@
             </a>
           </li>
           <li>
-            <img src="https://www.foody.vn/style/images/gov_seals.jpg" width="160px" alt="">
+            <img src="https://www.foody.vn/style/images/gov_seals.jpg" width="100%" alt="">
           </li>
         </ul>
       </div>
@@ -488,12 +548,22 @@
   window.onscroll = function () {
     myFunction()
   };
+  var btnTop = document.getElementById("btn-back-to-top");
   var toolHeader = document.getElementById("toolbarFixed");
   var sticky = toolHeader.offsetTop;
   var toolMenu = document.getElementById("menuFixed");
   var toolData = document.getElementById("dataScroll");
   var sticky2 = toolMenu.offsetTop + screen.height;
+  var deal = document.getElementById("dataScroll");
+  var toolNav = document.getElementById("tool");
+  var hDeal = deal.offsetHeight;
   var itemSlick;
+
+
+  btnTop.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
   var listData = [
     {
       food: "Gà Tươi Mạnh Hoạch - Trần Đại Nghĩa",
@@ -548,9 +618,7 @@
   ]
   if (screen.width < 577) {
     itemSlick = 1
-  } else if (screen.width < 769) {
-    itemSlick = 2
-  } else {
+  }else {
     itemSlick = 3
   }
 
@@ -567,6 +635,12 @@
       toolMenu.classList.remove("menuFixed");
       toolData.classList.remove("menuFixed");
     }
+
+    if (window.pageYOffset > hDeal) {
+      toolNav.style.display="block";
+    } else {
+      toolNav.style.display="none";
+    }
   }
 
   $(document).ready(function () {
@@ -575,18 +649,17 @@
   });
 
   function setDataDeal() {
-
     for (var i = 0; i < listData.length; i++) {
       document.getElementById('deal').innerHTML +=
         `<div class="deal-xl col-md-4 col-lg-3 col-sm-6 p-1">
             <div class=" p-0 bg-white ">
-              <img src="` + listData[i].image + `" width="100%">
-                <div class="item-detail" style="height:130px;">
-                  <div class="p-2"> ` + listData[i].food + `</div>
-                  <div class="p-1" style="color: #777;font-size: 12px">` + listData[i].location + `
+              <img src="` + listData[i].image + `" width="100%" style="max-width: 226" height="144">
+                <div class="item-detail p-2" style="height:70px;">
+                  <div class="text-ellipsis" style="font-size:14px;font-weight: 700">` + listData[i].food + `</div>
+                  <div class="text-ellipsis" style="color: #777;font-size: 12px;text-overflow: ellipsis;">` + listData[i].location + `
                   </div>
                 </div>
-                <div class="p-3 border-top">
+                <div class="p-2 border-top" style="height: 60px;">
                   <i class="fa fa-tag" style="color: red"></i>
                   Restaurant
                 </div>
@@ -601,16 +674,26 @@
       for (var i = 0; i < listData.length; i++) {
         document.getElementById('menu').innerHTML +=
           `<div class="col-xl-3 col-sm-6 p-1">
-         <div class=" p-0 bg-white ">
-           <img src="` + listData[i].image + `" width="100%">
-           <div class="item-detail" style="height:150px;">
-             <div class="p-2">` + listData[i].food + `</div>
-             <div class="p-1" style="color: #777;font-size: 12px;"> ` + listData[i].location + `
+         <div class=" p-0 bg-white">
+           <img src="` + listData[i].image + `" width="100%" style="" height="150">
+           <div class="item-detail border-bottom p-2" style="height:55px;width: 100%;">
+             <div class=" text-ellipsis" style="font-size:14px;font-weight: 700">` + listData[i].food + `</div>
+             <div class="p-1 text-ellipsis" style="color: #777;font-size: 12px;"> ` + listData[i].location + `
              </div>
            </div>
-           <div class="p-3 border-top">
-             <i class="fa fa-tag" style="color: red"></i>
-             Restaurant
+           <div class="item-detail p-2" style="height:53px;width: 100%;">
+              <div class="col-2 p-0 float-left"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_userAvatar.svg/1200px-OOjs_UI_icon_userAvatar.svg.png" alt="user" width="30px" height="30px"></div>
+              <div class="col-9 p-0 text-ellipsis" style="height: 50px;line-height: 25px">Mình ấn tượng với quán kể từ ngày ăn ở đây vào lễ Tết. Trong khi các quán khác bán giá cao gấp rưỡi, thậm chí là gấp đôi khi Tết đến.
+               Thì ở đây chỉ tăng thêm 5k/bát mà chất lượng vẫn OK. Quán ngon, mình vẫn thường xuyên ăn ở đây. Chỉ có điều vợ chủ quán nhìn lạnh lùng, thiếu tinh thần phục vụ quá. À, và quán nên cất bớt đồ trên 2 bàn trong cùng đi để rộng hơn
+               , thiếu chỗ ngồi quá.</div>
+           </div>
+           <div class="p-2 border-top">
+             <i class="fa fa-comment p-1" style="size: 12px;color: #777"></i>0
+             <i class="fa fa-camera p-1" style="size: 12px;color: #777"></i>0
+             <button class="border-0" style="padding: 2px 10px;float: right;">
+             <i class="fa fa-bookmark" style="size: 12px;color: #777"></i>
+             Lưu
+             </button>
            </div>
          </div>
        </div>`
@@ -622,6 +705,15 @@
     slidesToShow: itemSlick,
     slidesToScroll: 1,
     autoplay: true,
+    asNavFor: '.slick-auto-detail',
+    centerMode: true,
+    autoplaySpeed: 2000,
+  });
+  $('.slick-auto-detail').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    asNavFor: '.slick-auto-3',
     autoplaySpeed: 2000,
   });
   $('.slick-prev').click(function(){
@@ -630,14 +722,6 @@
   $('.slick-next').click(function(){
     $(".slick-auto-3").slick('slickNext');
   });
-
-  // $('.slick-auto-1').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  // });
-
 </script>
 </body>
 </html>

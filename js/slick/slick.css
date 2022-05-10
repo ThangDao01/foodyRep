@@ -117,3 +117,9 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+.slide-text {
+  background: #cc0099;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+}
