@@ -28,36 +28,67 @@ li {
 
 .tool-item {
   border-bottom: 1px solid #c2c2c2;
-  padding: 10px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+
+.tool-item a {
+  min-width: 100%;
 }
 
 .tool-item i {
   font-size: 22px;
+  text-align: center;
+  width: 100%;
   color: white;
+  border: none;
 }
 
+.menu-btn {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  background-color: #ee4d2d;
+  border: none !important;
+  height: 30px;
+  color: white;
+  border-radius: 3px;
+}
+.tooltip-inner{
+  background-color: #ebebeb;
+  /*background-color: red;*/
+  color: black;
+  height: 42px;
+}
 .text-ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+.tooltip .arrow{
+  display: none !important;
+}
 .text-placeholder {
   font-weight: 400;
   color: #777;
   font-size: 14px;
 }
-.btn-icon{
+
+.btn-icon {
   width: 30px !important;
   height: 30px !important;
   font-size: 15px;
 }
-.bg-df{
+
+.bg-df {
   background-color: #eee !important;
 }
-.color-df{
+
+.color-df {
   color: #777 !important;
 }
+
 a {
   text-decoration: none !important;
 }
@@ -77,18 +108,21 @@ a {
   padding: 5px;
   min-width: 100%;
 }
+
 .nav-item {
   display: flex;
   min-height: 100%;
   align-items: center;
   padding: 0 5px;
 }
-.nav-item:hover{
+
+.nav-item:hover {
   color: red !important;
   background-color: white;
   border-bottom: red solid 2px;
 }
-.nav-item:hover a{
+
+.nav-item:hover a {
   color: red !important;
 }
 
@@ -121,14 +155,16 @@ img {
   border-bottom: red solid 2px;
 }
 
-.nav-item.active{
+.nav-item.active {
   color: red !important;
   background-color: white;
   border-bottom: red solid 2px;
 }
-.nav-item.active a{
+
+.nav-item.active a {
   color: red;
 }
+
 .nav-item:hover {
   color: #333 !important;
   background-color: white;
@@ -199,6 +235,7 @@ img {
   font-size: 20px;
   font-weight: 700;
 }
+
 .footer-title {
   font-size: 16px;
   font-weight: 700;
