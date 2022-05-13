@@ -11,7 +11,9 @@ li {
 .w-33 {
   width: 33% !important;
 }
-
+.col-ssm-6{
+  padding: 0 15px 0 0;
+}
 #toolbarFixed {
   border-bottom: #ddd 1px solid;
 }
@@ -55,20 +57,24 @@ li {
   color: white;
   border-radius: 3px;
 }
-.tooltip-inner{
+
+.tooltip-inner {
   background-color: #ebebeb;
   /*background-color: red;*/
   color: black;
   height: 42px;
 }
+
 .text-ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.tooltip .arrow{
+
+.tooltip .arrow {
   display: none !important;
 }
+
 .text-placeholder {
   font-weight: 400;
   color: #777;
@@ -260,9 +266,11 @@ img {
 }
 
 .config {
-
+ padding: 10px;
 }
-
+.statistic{
+  padding: 0 10px;
+}
 .config a {
   color: #1D95CB;
 }
@@ -296,6 +304,13 @@ img {
 
   .menuFixed {
     width: 100%;
+  }
+}
+@media (min-width: 321px) and (max-width: 992px) {
+  .col-ssm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
